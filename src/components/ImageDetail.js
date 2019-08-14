@@ -1,18 +1,39 @@
 import React from "react";
 import styled from "styled-components";
-import { Text, View } from "react-native";
 
+const Card = styled.View`
+  padding: 8px;
+  /* margin: 8px; */
+  background-color: #fafafa;
+  border-radius: 8px;
+  flex-direction: row;
+`;
+const InfoWrapper = styled.View`
+  margin: 8px;
+`;
 const CardImage = styled.Image`
-  height: 75px;
-  width: 75px;
+  height: 100px;
+  width: 100px;
+  border-radius: 8px;
+`;
+const Title = styled.Text`
+  font-size: 18px;
+  font-weight: 600;
+`;
+const SubTitle = styled.Text`
+  font-size: 14px;
+  font-weight: 400;
 `;
 
 const ImageDetail = props => {
   return (
-    <View>
-      <CardImage source={require("../../assets/beach.jpg")} />
-      <Text>{props.title}</Text>
-    </View>
+    <Card>
+      <CardImage source={props.imageSource} />
+      <InfoWrapper>
+        <Title>{props.title}</Title>
+        <SubTitle>Image score - {props.score}</SubTitle>
+      </InfoWrapper>
+    </Card>
   );
 };
 
