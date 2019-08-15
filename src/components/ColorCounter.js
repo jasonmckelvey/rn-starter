@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FlatList, View, Text } from "react-native";
+import { Text } from "react-native";
 import styled from "styled-components";
 import Button from "../components/Button";
 
@@ -7,13 +7,12 @@ const Wrapper = styled.View`
   width: 100%;
 `;
 
-const ColorCounter = ({ color }) => {
-  const [] = useState([]);
+const ColorCounter = ({ color, onIncrease, onDecrease }) => {
   return (
     <Wrapper style={{ flex: 1 }}>
       <Text>{color}</Text>
-      <Button title={`Increase ${color}`} onPress={() => {}} />
-      <Button title={`Decrease ${color}`} onPress={() => {}} />
+      <Button onPress={() => onIncrease()} title={`Increase ${color}`} />
+      <Button onPress={() => onDecrease()} title={`Decrease ${color}`} />
     </Wrapper>
   );
 };
