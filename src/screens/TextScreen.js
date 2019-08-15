@@ -1,15 +1,24 @@
 import React, { useState, useReducer } from "react";
 import styled from "styled-components";
-import { Text, View } from "react-native";
+import { Text, View, TextInput } from "react-native";
 import Button from "../components/Button";
 
 const Wrapper = styled.View`
-  align-items: center;
   padding: 8px;
+`;
+const Input = styled.TextInput`
+  height: 40px;
+  margin: 15px;
+  border-width: 1px;
+  border-color: #f5f5f5;
 `;
 
 const TextScreen = () => {
-  return <Wrapper style={{ flex: 1 }} />;
+  return (
+    <Wrapper style={{ flex: 1 }}>
+      <Input />
+    </Wrapper>
+  );
 };
 
 export default TextScreen;

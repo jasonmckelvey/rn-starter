@@ -1,6 +1,5 @@
-import React, { useState, useReducer } from "react";
+import React, { useReducer } from "react";
 import styled from "styled-components";
-import { Text, View } from "react-native";
 import Button from "../components/Button";
 
 const Wrapper = styled.View`
