@@ -9,8 +9,9 @@ const Wrapper = styled.View`
 const Input = styled.TextInput`
   height: 40px;
   margin: 15px;
+  border-radius: 4;
   border-width: 1px;
-  border-color: #e6e6eb;
+  border-color: #bac7d5;
 `;
 
 const TextScreen = () => {

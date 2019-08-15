@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const ButtonWrapper = styled.TouchableOpacity`
   padding: 16px;
-  background-color: #f5f5f5;
+  background-color: #e8edf1;
   margin: 8px;
   border-radius: 4px;
   align-items: center;
