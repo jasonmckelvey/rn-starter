@@ -8,18 +8,6 @@ const Wrapper = styled.View`
   padding: 8px;
   /* flex: 1; */
 `;
-const ButtonWrapper = styled.TouchableOpacity`
-  width: 100%;
-  padding: 16px;
-  background-color: #f5f5f5;
-  margin: 8px;
-  border-radius: 4px;
-  align-items: center;
-`;
-const ButtonText = styled.Text`
-  font-size: 16;
-  font-weight: 600;
-`;
 const InfoText = styled.Text`
   margin: 16px;
   font-size: 16;
