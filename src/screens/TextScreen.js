@@ -10,7 +10,7 @@ const Input = styled.TextInput`
   height: 40px;
   margin: 15px;
   border-width: 1px;
-  border-color: #f5f5f5;
+  border-color: #e6e6eb;
 `;
 
 const TextScreen = () => {

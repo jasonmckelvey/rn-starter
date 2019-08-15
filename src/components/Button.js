@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 
 const ButtonWrapper = styled.TouchableOpacity`
-  width: 100%;
   padding: 16px;
   background-color: #f5f5f5;
   margin: 8px;
